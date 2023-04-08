@@ -1,6 +1,7 @@
 const elementoParaInserirLivros = document.getElementById('livros')
 
 function exibirOsLivrosNaTela(listaDeLivros) {
+    elementoParaInserirLivros.innerHTML = ''
     listaDeLivros.forEach(livro => {//forEcha() significa para cada. Então para cada livro quero fazer uma ação
         elementoParaInserirLivros.innerHTML += `
         <div class="livro">
